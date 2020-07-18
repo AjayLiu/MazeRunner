@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html, body {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.icons, .table_container .settings #close, .table_container #refresh, .table_container #open {
+  position: absolute;
+  padding: 8px;
+  cursor: pointer;
+  color: #333;
+}
+.icons:hover, .table_container .settings #close:hover, .table_container #refresh:hover, .table_container #open:hover {
+  color: #888;
+}
+
+.table_container {
+  position: absolute;
+  -webkit-transform: translatex(-50%);
+          transform: translatex(-50%);
+  left: 50%;
+  padding: 35px;
+  margin-top: 30px;
+  width: auto;
+  box-shadow: 0 1px 30px -4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-radius: 5px;
+  user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+.table_container .settings {
+  position: absolute;
+  background: white;
+  width: 100%;
+  height: 100%;
+  top: 100%;
+  left: 0;
+  padding: 20px;
+  -webkit-transition: top 0.5s;
+  transition: top 0.5s;
+}
+.table_container .settings #close {
+  top: 0;
+  right: 0;
+}
+.table_container .settings h2 {
+  padding-bottom: 30px;
+}
+.table_container .settings .input_container {
+  display: block;
+  margin: 10px;
+}
+.table_container .settings #submit {
+  border: none;
+  border-radius: 10px;
+  background-color: #02b3e4;
+  box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15);
+  padding: 10px;
+  color: white;
+  width: 70%;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.table_container .settings #colorPicker {
+  border: none;
+  background: white;
+}
+.table_container #refresh {
+  top: 0;
+  left: 0;
+}
+.table_container #open {
+  right: 0;
+  top: 0;
+}
+
+.title {
+  padding: 20px;
+  color: #333;
+  font-family: Monoton;
+}
+
+table,
+tr,
+td {
+  border: 1px solid #777;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  cursor: pointer;
+}
+table tr {
+  height: 4vmin;
+}
+table tr td {
+  min-width: 4vmin;
+  width: 4vmin;
+  -webkit-transition: background 0.15s;
+  transition: background 0.15s;
+  background-color: black;
+}
+table tr td:hover {
+  background: rgba(40, 40, 40, 0.3);
+}
+
+input[type=number] {
+  border-radius: 10px;
+  border: none;
+  width: 6em;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.open {
+  top: 0 !important;
+}

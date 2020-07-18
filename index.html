@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Maze Runner</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet">
+        <link rel="icon" type="image/png" href="../imgs/logo.png">     
+        <link rel='stylesheet' href='styles.css'> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <h2 class="title">Maze Runner</h2>
+        <div class="table_container">
+          <i class="material-icons" id="open">settings</i>
+          <i class="material-icons" id="refresh">refresh</i>
+          <div class="settings" id="settings">
+            <i class="material-icons" id="close">clear</i>
+            <h2>Settings</h2>
+            <div class="input_container">
+              Grid Height:
+              <input type="number" id="input_height" name="height" min="7" value="15" max="30">
+            </div>
+            <div class="input_container">
+              Grid Width:
+              <input type="number" id="input_width" name="width" min="7" value="15" max="30">
+            </div>
+            <!-- <div class="input_container">
+              Color: 
+              <input type="color" id="colorPicker">
+            </div> -->
+            <input type="submit" id="submit" value="Save"><br>
+          </div>
+          <!-- Rendering GRID -->
+          <table id="pixel_canvas"></table>
+        </div>
+        <button onclick="solveMaze()">
+            Go!
+        </button>
+        <script src = "index.js"></script>
+    </body>
+</html>
+
